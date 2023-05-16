@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/Aula18-Exercices/index.ts',
+  entry: './src/Aula17-Exercices/index.ts',
   module: {
     rules: [
       {
@@ -20,12 +20,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(
-      __dirname,
-      'frontend',
-      'assets',
-      'js',
-    ),
+    path: path.resolve(__dirname, 'frontend', 'assets', 'js'),
   },
   devtool: 'source-map',
 };
