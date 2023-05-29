@@ -1,0 +1,16 @@
+"use strict";
+const arrayNumbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(arrayNumbers);
+async function promiseAsync() {
+    return 1;
+}
+function myPromise() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(1);
+        }, 1000);
+    });
+}
+promiseAsync().then((result) => console.log(result + 1));
+myPromise().then((result) => console.log(result + 1));
+//# sourceMappingURL=index.js.map
